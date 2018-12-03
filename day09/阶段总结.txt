@@ -1,0 +1,83 @@
+阶段性总结
+　数据类型
+    不可变的数据类型
+    　　bool,int,float,complex,str,tuple,frozenset,bytes(字节串，后面学)
+    可变的数据类型：
+    　　list dict set byterray(字节数组)
+    
+    值：
+    　　None  False  True
+    运算符：
+        ＋－　＊　／　／／　％　＊＊
+        > >= < <= == 1=
+        in / not in 
+        is / is not
+        not and or 
+        & | ^ -
+        + (正号)　－（负号）
+        [] #索引和切片
+    表达式：
+    　　１　
+     True
+     1+2*3
+     L.pop(2) #方法调用也是表达式
+     sum([1,2,5,10])
+
+     条件表达式：　x if x > y esle y
+
+     全部的推导式：
+     　　　列表　字典　集合
+
+    语句：
+    表达式语句(表达式单独在一行可以形成表达式语句)
+    print("hello")
+    ”这是一段文字“
+    赋值语句：
+    　a = 100
+    a = b = c = 200
+    x,y,z = 1,2,3
+    del语句
+    if语句
+    while语句
+    for语句
+    break语句
+    continue 语句
+    pass　语句
+
+    内建函数：
+    len(x)
+    max
+    min
+    sum
+    any
+    all
+
+-------------------构造函数－－－－－－
+
+bool(x)
+int(x)
+float(X)
+complex(x)
+str(X)
+list(x)
+tuple(x)
+dict(X)
+set(x)
+frozenset(X)
+abs(x)
+round(x,y)
+pow(x,y,z=None)
+-------------
+bin(x)
+oct(x)
+hex(x)
+chr(x)
+ord(x)
+--------------------
+range(star,stop,step)
+---基本输入输出函数-------
+input(x)
+print(.....)
+-------------
+id(x) 返回内存地址
+type(X)　返回类型
