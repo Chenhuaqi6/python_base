@@ -31,18 +31,32 @@
 # fun()
 # fun()
 
-def myfunc(y):
-    def fx(z,w):
-        print("装饰函数",z,w)
-        y(z,w)
-        print("装饰函数",z,w)
-    return fx
+# def myfunc(y):
+#     def fx(z,w):
+#         print("装饰函数",z,w)
+#         y(z,w)
+#         print("装饰函数",z,w)
+#     return fx
 
 
 
-@myfunc
-def myfun(z,w):
-    print("这是被装饰的函数",z,w)
+# @myfunc
+# def myfun(z,w):
+#     print("这是被装饰的函数",z,w)
 
-# myfun = myfunc(myfun)
-myfun(5,10)
+# # myfun = myfunc(myfun)
+# myfun(5,10)
+
+import time
+a = time.time()
+def decorator(fn):
+        def fun():
+            print(time.time()-a)
+            fn()
+        return fun
+
+@decorator
+def k():
+    print("被调用")
+
+k()

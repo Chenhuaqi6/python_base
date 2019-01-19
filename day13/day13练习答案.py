@@ -1,18 +1,21 @@
 
 
-# import time
-# def mytime():
-#     hh=int(input("请输入小时: "))
-#     mm=int(input("请输入分钟: "))
-#     ss=int(input("请输入秒数: "))
-#     i=1
-#     while i < 60:
-#         ss+=1
-#         print("%d:%d:%d" % (hh,mm,ss))
-#         time.sleep(1)
-#         i+=1
+import time
+def mytime():
+    hh=int(input("请输入小时: "))
+    mm=int(input("请输入分钟: "))
+    ss=int(input("请输入秒数: "))
+    ss=0
+    while 1:
+        ss+=1
+        if ss > 59:
+            ss = 1
+            mm += 1
+        print("%d:%d:%d" % (hh,mm,ss),end='\r')
+        time.sleep(0.2)
+        # i+=1
    
-# mytime()
+mytime()
 
 # import time
 # while True:
